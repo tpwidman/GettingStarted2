@@ -24,7 +24,7 @@ export default class HomeViewControl extends BaseViewControl {
             };
             
             navigatedTo(): void {
-                this.productsService.getProducts().then((products) => {
+                this.productsService.getProductsOld().then((products) => {
                     this.context.products = products;
                 });
             };

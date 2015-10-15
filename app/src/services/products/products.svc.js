@@ -22,6 +22,18 @@ var ProductsService = (function (_super) {
         });
     };
     ;
+    ProductsService.prototype.placeOrder = function (order) {
+        order.userid = this.userRepository.userid;
+        return this.http.json({
+            method: 'POST',
+            url: this.host + '/orders/create',
+            data: order
+        }).then(function (success) {
+            return true;
+        }, function (error) {
+            throw error.response.message;
+        });
+    };
     return ProductsService;
 })(base_svc_1.default);
 Object.defineProperty(exports, "__esModule", { value: true });

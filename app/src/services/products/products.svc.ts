@@ -21,7 +21,9 @@ export default class ProductsService extends BaseService {
         return this.json('products/all');
     }
 
-    placeOrder(order: models.IOrder): async.IThenable<boolean> {
+*/
+
+placeOrder(order: models.IOrder): async.IThenable<boolean> {
         order.userid = this.userRepository.userid;
         return this.http.json<models.IResponse>({
             method: 'POST',
@@ -35,8 +37,7 @@ export default class ProductsService extends BaseService {
                 throw error.response.message;
             }
         );
-    }  
-*/    
+    }    
     
 }
 

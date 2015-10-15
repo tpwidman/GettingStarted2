@@ -7,6 +7,7 @@ var platypus_1 = require('platypus');
 var home_vc_1 = require('../viewcontrols/home/home.vc');
 var register_vc_1 = require('../viewcontrols/register/register.vc');
 var login_vc_1 = require('../viewcontrols/login/login.vc');
+var order_vc_1 = require('../viewcontrols/order/order.vc');
 var confirmation_vc_1 = require('../viewcontrols/confirmation/confirmation.vc');
 var MyApp = (function (_super) {
     __extends(MyApp, _super);
@@ -16,7 +17,7 @@ var MyApp = (function (_super) {
             { pattern: '', view: home_vc_1.default },
             { pattern: 'login', view: login_vc_1.default },
             { pattern: 'register', view: register_vc_1.default },
-            { pattern: 'order/:id', view: OrderViewControl },
+            { pattern: 'order/:id', view: order_vc_1.default },
             { pattern: 'confirmation', view: confirmation_vc_1.default }
         ]);
     }

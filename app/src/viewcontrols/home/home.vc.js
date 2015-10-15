@@ -30,7 +30,7 @@ var HomeViewControl = (function (_super) {
     ;
     HomeViewControl.prototype.navigatedTo = function () {
         var _this = this;
-        this.productsService.getProducts().then(function (products) {
+        this.productsService.getProductsOld().then(function (products) {
             _this.context.products = products;
         });
     };
