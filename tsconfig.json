@@ -1,0 +1,37 @@
+{
+    "lintOptions": {
+        "rules": {}
+    },
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "watch": false
+    },
+    "filesGlob": [
+        "app/**/*.ts",
+        "test/**/*.ts",
+        "typings/tsd.d.ts"
+    ],
+    "files": [
+        "typings/tsd.d.ts",
+        "app/src/models/models.d.ts",
+        "app/src/app/app.ts",
+        "app/src/repositories/base/base.repo.ts",
+        "app/src/repositories/user/user.repo.ts",
+        "app/src/services/base/base.svc.ts",
+        "app/src/services/products/products.svc.ts",
+        "app/src/services/user/user.svc.ts",
+        "app/src/main.ts",
+        "app/src/viewcontrols/base/base.vc.ts",
+        "app/src/viewcontrols/confirmation/confirmation.vc.ts",
+        "app/src/viewcontrols/home/home.vc.ts",
+        "app/src/viewcontrols/login/login.vc.ts",
+        "app/src/viewcontrols/order/order.vc.ts",
+        "app/src/viewcontrols/register/register.vc.ts",
+        "app/src/templatecontrols/navbar/navbar.tc.ts"
+    ]
+}

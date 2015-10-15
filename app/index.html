@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="dist/app.css">
+        <title>Getting Started</title>
+    </head>
+    <body>
+       <plat-drawer class="drawer" plat-options="{ position: 'right' }">
+           
+            <plat-link plat-options="{ view: '', isUrl: true }" class="drawer-item">
+                <img class="drawer-icon" src="./images/house.png" />
+                <span>Home</span>
+             </plat-link>
+             
+             <plat-link plat-options="{ view: '/login', isUrl: true }" class="drawer-item">
+                <img class="drawer-icon" src="./images/logout.png" />
+                <span>Log Out</span>
+             </plat-link>
+             
+        </plat-drawer>
+        
+        <div class="app">
+            <navbar></navbar>
+                <plat-viewport></plat-viewport>
+        </div>
+      <script type="text/javascript" src="dist/app.js"></script>
+    </body>
+</html>
